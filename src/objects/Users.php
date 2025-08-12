@@ -4,6 +4,7 @@ namespace objects;
 
 use config\Database;
 use PDO;
+use PDOStatement;
 
 class Users
 {
@@ -20,7 +21,7 @@ class Users
         $this->conn = $db;
     }
 
-    public function getAll(): false|\PDOStatement
+    public function getAll(): false|PDOStatement
     {
         $query = "SELECT first_name, last_name FROM " . $this->tableName;
 
