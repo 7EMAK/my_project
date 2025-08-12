@@ -1,7 +1,7 @@
 <?php
 
 use config\Database;
-use objects\Users;gitgit
+use objects\Users;
 
 header("Access-Control-Allow-Methods: DELETE");
 header("Content-Type: application/json; charset=UTF-8");
