@@ -38,4 +38,5 @@ services:
       MYSQL_ROOT_PASSWORD: root
 
 volumes:
-      mysql_data:
+  mysql_data:
+    external: true
